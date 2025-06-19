@@ -38,11 +38,9 @@ Settings => Keyboard => View and customize shortcuts => Navigation => Switch win
 
 Settings => Keyboard => View and customize shortcuts => Navigation => Hide all normal windows => set "Super/Windows + Tab"
 
-#--------------------------------------------#
-#----- Dash to Dock (the left-size dock) ----#
-#--------------------------------------------#
-
-#### THIS IS OPTIONAL!!!
+#-----------------------------------------#
+#----- Dash to Dock (the bottom dock) ----#
+#-----------------------------------------#
 
 Open apps menu (use Super key or Windows key)
 
@@ -56,11 +54,13 @@ Go to "Browse" and search "Dash to Dock" and install it
 
 Then, back to the "Installed" and open the setting of "Dash to dock"
 
-Go to "Position on screen" and choose "Left"
+Go to "Position on screen" and choose "Bottom"
 
-Choose icon size as 48
+Choose icon size as 32
 
 Tick the "Autohide" so that it will hide when it obstruct browser windows
+
+Tick "Places icon to the center"
 
 ############# Disable show overview on startup
 
@@ -71,6 +71,8 @@ Dash to Panel => Behavior (bottom edge) => Overview (scroll down) => Disable sho
 #------------------------------------------------#
 #----- Dash to Panel (the top-size task bar) ----#
 #------------------------------------------------#
+
+#### THIS IS OPTIONAL!!!
 
 Install "Extension Manager" like above (if not do it yet)
 
