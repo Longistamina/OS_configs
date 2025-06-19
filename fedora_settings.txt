@@ -54,17 +54,19 @@ Go to "Browse" and search "Dash to Dock" and install it
 
 Then, back to the "Installed" and open the setting of "Dash to dock"
 
-Go to "Position on screen" and choose "Bottom"
+Go to "Position on screen" and choose "Left"
 
-Choose icon size as 32
+Choose icon size as 48
 
-Tick the "Autohide" so that it will hide when it obstruct browser windows
+Turn on the "Intelligent autohide" so that it will hide when it obstruct browser windows
 
-Tick "Places icon to the center"
+Click the gear of "Intelligent autohide" => Turn on "Autohide" => Turn off "Dodge Windows"
+
+Untick "Places icon to the center"
 
 ############# Disable show overview on startup
 
-Dash to Panel => Behavior (bottom edge) => Overview (scroll down) => Disable show overview on startup
+Dash to Dock => Appearance => Turn off "Show overview on startup"
 
 
 
