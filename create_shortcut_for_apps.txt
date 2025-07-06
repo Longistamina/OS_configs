@@ -3,9 +3,6 @@
 # Location for Applications Menu
 nano ~/.local/share/applications/your-app-name.desktop
 
-# Alternative System-wide Location
-sudo nano /usr/share/applications/your-app-name.desktop
-
 # Add contents for the .desktop file like below and customize it
 [Desktop Entry]
 Version=1.0
@@ -24,9 +21,7 @@ Categories=Network;Utility
 #-------- Example with LMStudio --------#
 #---------------------------------------#
 
-sudo nano /usr/share/applications/LMStudio.desktop
-
-# or use nano ~/.local/share/applications/LMStudio.desktop
+nano ~/.local/share/applications/LMStudio.desktop
 
 # Customize the .desktop file
 [Desktop Entry]
