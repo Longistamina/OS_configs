@@ -16,6 +16,9 @@ Categories=Network;Utility
 
 # Then, Ctrl+O to save and Ctrl+X to exit
 
+# Finally, add execution right for the .desktop file
+chmod +x ~/.local/share/applications/your-app-name.desktop
+
 
 #---------------------------------------#
 #-------- Example with LMStudio --------#
@@ -35,3 +38,6 @@ Icon=/home/longdpt/lmstudio/lmstudio_icon.jpg
 Categories=AI
 
 # Then, Ctrl+O to save and Ctrl+X to exit
+
+# Finally, add execution right for the .desktop file
+chmod +x ~/.local/share/applications/LMStudio.desktop
