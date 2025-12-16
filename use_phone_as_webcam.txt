@@ -1,0 +1,65 @@
+##############################
+## Step 1: Install Software ##
+##############################
+
+# Install OBS and DroidCam plugin via Flatpak
+flatpak install flathub com.obsproject.Studio
+flatpak install flathub com.obsproject.Studio.Plugin.DroidCam
+
+# Install iOS dependencies
+sudo dnf install usbmuxd libimobiledevice android-tools
+sudo systemctl enable --now usbmuxd
+
+###########################################
+## Step 2: Fix Crypto Policy (Critical!) ##
+###########################################
+
+# Change from FEDORA43 to LEGACY (required for iPhone pairing)
+sudo update-crypto-policies --set LEGACY
+sudo reboot
+
+#########################
+## Step 3: Pair iPhone ##
+#########################
+
+# After reboot, connect iPhone via USB-C cable
+# Make sure iPhone is UNLOCKED
+idevicepair pair
+# Tap "Trust This Computer" on iPhone when prompted
+
+# Verify pairing
+idevicepair validate
+
+###########################################
+## Step 4: Grant Flatpak USB Permissions ##
+###########################################
+
+# Permanent USB access for OBS
+flatpak override --user --filesystem=/run/usbmuxd:ro com.obsproject.Studio
+
+############################
+## Step 5: Connect in OBS ##
+############################
+
+Open DroidCam app on iPhone 15
+
+Launch OBS Studio
+
+Add Source → "DroidCam OBS"
+
+Click "Refresh Device List"
+
+Select your iPhone from dropdown (idevice_id number)
+
+Click "Activate"
+
+Done! Your iPhone 15 is now working as a webcam in OBS via USB-C.
+
+################################################################
+## Step 6: Use as webcam for other apps: Zoom, GoogleMeet,... ##
+################################################################
+
+In OBS, find and click the "Start Virtual Camera"
+(then other apps will recognize it)
+
+After using, click "Stop Virtual Camera"
