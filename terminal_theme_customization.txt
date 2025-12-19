@@ -7,9 +7,11 @@
 ################################
 
 # Install oh-my-posh (do NOT use sudo - user installation only)
+# This installs to ~/.local/bin by default
 curl -s https://ohmyposh.dev/install.sh | bash -s
 
-# This installs to ~/.local/bin by default
+# Then export file to make the command work for this session
+export PATH=$PATH:$HOME/.local/bin
 
 ###############################
 ## Step 2: Install Nerd Font ##
@@ -62,7 +64,7 @@ nano ~/.config/oh-my-posh/mytheme.omp.json
   "type": "python",
   "style": "powerline",
   "powerline_symbol": "\ue0b0",
-  "foreground": "#f2f3f8",
+  "foreground": "#2e2d28",
   "background": "#FFDE57",
   "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
   "properties": {
