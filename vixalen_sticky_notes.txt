@@ -1,0 +1,68 @@
+################################################
+## Installing Vixalien Sticky Notes on Ubuntu ##
+################################################
+
+#############################
+## Step 1: Install Flatpak ##
+#############################
+
+# Update package list
+sudo apt update
+
+# Install Flatpak package manager
+sudo apt install flatpak
+
+####################################
+## Step 2: Add Flathub Repository ##
+####################################
+
+# Add Flathub (the main Flatpak app store)
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Note: You'll see a warning about XDG_DATA_DIRS - this is normal!
+# Apps will appear in your menu after logging out/in
+
+######################################
+## Step 3: Install Sticky Notes App ##
+######################################
+
+# Install Vixalien's Sticky Notes
+flatpak install flathub com.vixalien.sticky
+
+# Type 'y' when prompted to confirm installation
+
+############################
+## Step 4: Launch the App ##
+############################
+
+# Option A: Launch from terminal
+flatpak run com.vixalien.sticky
+
+# Option B: Search for "Sticky Notes" in your application launcher
+# (May require logout/login or GNOME Shell restart first)
+
+#####################################################
+## Step 5: Make Apps Appear Immediately (Optional) ##
+#####################################################
+
+# Restart GNOME Shell (for GNOME desktop only)
+# Press Alt+F2, type: r, then press Enter
+
+# OR simply log out and log back in
+
+################
+## Usage Tips ##
+################
+
+# Launch app anytime with:
+flatpak run com.vixalien.sticky
+
+# Update the app:
+flatpak update com.vixalien.sticky
+
+# Uninstall if needed:
+flatpak uninstall com.vixalien.sticky
+
+Done! You now have a Windows-style sticky notes app on Ubuntu.
+Notes will persist across reboots and pin to your desktop.
+
