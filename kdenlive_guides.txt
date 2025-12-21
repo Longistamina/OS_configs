@@ -122,6 +122,13 @@ Thirdway: click and hold the middle mouse (scroll button)
 => drag left: move the Timeline to the left
 => drag right: move the Timeline to the right
 
+#######################################
+## Timeline resolution/scale changes ##
+#######################################
+
+Press Ctrl + "+" to increase the scale (resolution)
+Press Ctrl + "-" to decrease the scale (resolution)
+
 ###################
 ## Selector tool ##
 ###################
