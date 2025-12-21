@@ -189,4 +189,7 @@ After cutting, if want to delete some part and remove the gap
 
 Go to "Project"
 -> Render
--> choose format (MP4)
+-> choose format (MP4-H264/AAC)
+-> More options
+-> Custom quality: 50-60%
+-> Encoder: threads 24
