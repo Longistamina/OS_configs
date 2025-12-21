@@ -1,0 +1,185 @@
+##############
+## Download ##
+##############
+
+Go to this site and download kdenlive
+https://kdenlive.org/download/
+
+After downloading, open it to explore
+
+###########################
+## Hardware Optimization ##
+###########################
+
+Go to Settings -> Run Config Wizards ...
+=> Make sure that your GPU and codecs and everything is working properly
+
+#####################################
+## Import/Create Files and Folders ##
+#####################################
+
+Click "Project Bin": this is the place where all your folders and files are stored during a project
+
+To import Files and Folders:
++ Drag that file or folder into the "Project Bin"
+
+Inside the "Project Bin", right click to see more option like CREATE NEW FOLDER
+
+##############################
+## Project profile settings ##
+##############################
+
+Click "Project" 
+-> Project Settings 
+-> check and modify project profiles manually 
+-> click "Ok"
+
+Make sure the profiles like resolution and FPS match your expectations.
+
+################################################
+## create and use Proxies for Smooth Playback ##
+################################################
+
+Click "Project" 
+-> Project Settings 
+-> click "Proxy" tab
+-> tick "Proxy clips"
+-> tick "Generate for videos larger than" (1 pixel)
+-> choose "Encoding profile:" as "ProRes"
+
+To make these changes as a standard (set as default),
+-> click "Settings"
+-> choose "Configure Kdenlive..."
+-> go to "Proxy clips"
+-> make sure the options are the same as above
+-> "Apply"
+-> "Ok"
+
+To apply these proxies to the clips:
+-> choose wanted clips in "Project bin"
+-> right click
+-> tick "Proxy clips"
+
+These changes make sure every single frame is encoded, making playback smoother.
+However, the quality might be decreased a bit to favor the smoothness
+
+####################################
+## Add clips to Timeline/Sequence ##
+####################################
+
+Just drag the clips from "Project Bin" into the Timeline section (bottom left part of the screen)
+
+######################################
+## Clip Monitor and Project Monitor ##
+######################################
+
+There are two monitor sections displaying our clips
++ left one: Clip Monitor, to quickly examine the clips in "Project Bin"
++ right one: Project Monitor, to show whatever the Timeline sees
+
+#############################################################
+## Clip Monitor usage: import a part of clip into Timeline ##
+#############################################################
+
+Clip Monitor can be used to select and import a smaller part of the clip to Timeline
+(instead of importing the whole clip)
+
+Choose a part of clip to import, In Clip Monitor:
++ find the wanted starting point, then press I (in point)
++ find the wanted ending point, then press O (out point)
++ click and drag that section between I and O into Timeline
+
+Clip Monitor also supports whether you want to import both video and audio, or just one of them
++ Hover the Clip Monitor
++ Drag the video part (film icon) to Timeline
++ Drag the audio part (speaker icon) to Timeline
+
+################################
+## Highlight and Delete clips ##
+################################
+
+Hold Shift
+-> drag to choose clips
+-> release to highlight the chosen ones
+
+Press "Del" to delete the highlighted clips
+
+#########################
+## Timeline navigation ##
+#########################
+
+3 ways to navigate the time line
+
+First way: hold Ctrl, then scroll up/download
+=> scroll up: bring the Timeline nearer to the current position of the mouse
+=> scroll down: make the Timeline further from the current position of the mouse
+
+Second way: just scroll up/down
+=> scroll up: move the Timeline to the left
+=> scroll down: move the Timeline to the right
+
+Thirdway: click and hold the middle mouse (scroll button)
+=> drag left: move the Timeline to the left
+=> drag right: move the Timeline to the right
+
+###################
+## Selector tool ##
+###################
+
+Icon: look like a mouse pointer, to the left of the scissors
+
+Works like a mouse, does nothing special, just for clicking and choosing
+
+###############################
+## Trim the clips and Ripple ##
+###############################
+
+Each clip has two ends, one at the left, the other at the right.
+
+Can click and drag these ends to trim the clips (make the clips shorter)
+
+Before trimming the clips, can activate the Ripple tool by clicking it.
+(it has the icon of two arrows <-||->)
+=> Tripple tool allows trimming clips while moving other clips ahead/behind that point 
+=> to keep editting gaps the same
+
+###################################
+## Slip tool: examine In and Out ##
+###################################
+
+Icon: [<-->]
+
+This help create a blurry frame with fixed length to examine the In and Out point of a section.
+
+Click to activate it, then slide the blurry frame to see the In and Out
+(to see what frame is starting on, and what frame is ending on)
+
+##############################
+## Spacer tool: gap remover ##
+##############################
+
+Icon: []-[]
+
+Choose a time point on the Timeline
+-> then click to activate the Spacer
+-> it will highlight all the clips ahead of that timpoint
+-> help bring them all to that time point, close the gap
+
+########################
+## Cut and Ripple cut ##
+########################
+
+Choose a time point
+-> press Shift + R to cut
+
+After cutting, if want to delete some part and remove the gap
+-> highlight that part
+-> press Shift + Del
+
+###############################
+## Export/Render the project ##
+###############################
+
+Go to "Project"
+-> Render
+-> choose format (MP4)
