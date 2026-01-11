@@ -16,9 +16,11 @@ Categories=Network;Utility
 
 # Then, Ctrl+O to save and Ctrl+X to exit
 
-# Finally, add execution right for the .desktop file
+# Then, add execution right for the .desktop file
 chmod +x ~/.local/share/applications/your-app-name.desktop
 
+# Finally, update the desktop database
+update-desktop-database ~/.local/share/applications/
 
 #---------------------------------------#
 #-------- Example with LMStudio --------#
@@ -39,5 +41,8 @@ Categories=AI
 
 # Then, Ctrl+O to save and Ctrl+X to exit
 
-# Finally, add execution right for the .desktop file
+# Then, add execution right for the .desktop file
 chmod +x ~/.local/share/applications/LMStudio.desktop
+
+# Finally, update the desktop database
+update-desktop-database ~/.local/share/applications/
