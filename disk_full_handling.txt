@@ -1,0 +1,9 @@
+# Step 1: Check larg files (like log)
+sudo find / -xdev -type f -size +500M | xargs -I {} ls -lh {}; 2>/dev/null
+
+# Step 2: Truncate those log files
+sudo bash -c 'for f in /var/lib/docker/containers/*/*-json.log; do truncate -s 0 "$f"; done'
+
+# Step 3: clear cache
+rm -rf ~/.cache/*
+sudo rm -rf /root/.cache/*
