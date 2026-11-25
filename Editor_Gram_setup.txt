@@ -65,7 +65,7 @@ uv-dl-install basedpyright ruff # for my env
   "lsp": {
     "ty": {
       "binary": {
-        "path": "/home/longdpt/dl/bin/basedpyright-langserver", // More general: /path/to/bin/ty
+        "path": "/home/longdpt/dl/bin/ty", // More general: /path/to/bin/ty
         "arguments": ["server"]
       }
     },
