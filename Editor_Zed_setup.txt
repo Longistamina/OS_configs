@@ -56,11 +56,38 @@
   /////////////////////////////////////////
   "languages": {
     "Python": {
-      "language_servers": ["ruff", "basedpyright"],
+      "language_servers": ["ruff", "ty"],
       "format_on_save": "off",
+      "detect_venv": {
+        "on_directories": ["/home/longdpt/dl/bin/"]
+      }
     },
     "Rust": {
+      "language_servers": ["rust-analyzer"],
       "format_on_save": "off",
+    },
+  },
+  /////////////////////////////////////////
+    "lsp": {
+    "ty": {
+      "binary": {
+        "path": "/home/longdpt/dl/bin/basedpyright-langserver", // More general: /path/to/bin/ty
+        "arguments": ["server"]
+      }
+    },
+
+    "ruff": {
+      "binary": {
+        "path": "/home/longdpt/dl/bin/ruff", // More general: /path/to/bin/ruff
+        "arguments": ["server"]
+        }
+      },
+
+    "rust-analyzer": {
+      "binary": {
+        "path": "/home/longdpt/.cargo/bin/rust-analyzer", // Use ``which rust-analyzer`` to get this path, then ``rust-analyzer --version`` to check
+                                                          // if not has or error, use ``rustup component add rust-analyzer`` to install
+      }
     },
   },
   /////////////////////////////////////////
